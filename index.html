@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="calculatorOutput" id="calculatorOutput">0</div>
+        <div class="calculatorKeys">
+          <div class="signs">
+            <button onclick="signs('*')">*</button>
+            <button onclick="signs('/')">/</button>
+            <button onclick="signs('+')">+</button>
+            <button onclick="signs('-')">-</button>
+          </div>
+
+          <div class="wrapperBottom">
+            <div class="numbersWrapper">
+              <div class="numbers">
+                <button onclick="numbers(7)">7</button>
+                <button onclick="numbers(8)">8</button>
+                <button onclick="numbers(9)">9</button>
+              </div>
+
+              <div class="numbers">
+                <button onclick="numbers(4)">4</button>
+                <button onclick="numbers(5)">5</button>
+                <button onclick="numbers(6)">6</button>
+              </div>
+
+              <div class="numbers">
+                <button onclick="numbers(1)">1</button>
+                <button onclick="numbers(2)">2</button>
+                <button onclick="numbers(3)">3</button>
+              </div>
+
+              <div class="numbers">
+                <button onclick="numbers(0)">0</button>
+                <button onclick="numbers('.')">.</button>
+                <button onclick="ac()">AC</button>
+              </div>
+            </div>
+            <div class="equals">
+              <button onclick="calculate()">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
